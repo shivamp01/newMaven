@@ -37,9 +37,5 @@ public class TestMaths {
 		assertEquals(25, m.square(5));
 	}
 	
-	@Test
-	public void invalidSquare() {
-		assertEquals(30,m.square(6));
-	}
 	
 }
