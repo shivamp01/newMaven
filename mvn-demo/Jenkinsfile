@@ -15,7 +15,7 @@ pipeline{
 		stage('compile stage'){
 			steps{
 			withMaven(maven: 'mvn'){
-				bat 'mvn -f mvn-demo/pom.xml clean'
+				bat 'mvn -f mvn-demo/pom.xml compile'
 				}
 			}
 		
@@ -24,7 +24,7 @@ pipeline{
 		stage('Test stage'){
 			steps{
 			withMaven(maven: 'mvn'){
-				bat 'mvn -f mvn-demo/pom.xml test'
+				bat 'mvn -f mvn-demo/pom.xml install'
 				} 
 			}
 		
